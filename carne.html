@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema - Verificar Assento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ossos.css">
+</head>
+<body>
+    <div class="container-cinema">
+
+            <h1>⋆𐙚 ̊.Mapa de Assentos do Cinema⋆𐙚 ̊.</h1>
+            <p>Digite o número da fileira e o número do assento que deseja verificar</p>
+
+            <form method="POST" action="cabeca.php">
+
+                <label>Fileira (0 a 3):</label>
+                <input type="number" name="fileira" min="0" max="3" required>
+                <br><br>
+
+                <label>Assento (0 a 3):</label>
+                <input type="number" name="assento" min="0" max="3" required>
+                <br><br>
+
+                <button type="submit">Verificar Assento</button>
+
+            </form>
+    </div>
+</body>
+</html>

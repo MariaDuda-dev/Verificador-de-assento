@@ -1,0 +1,135 @@
+*,*::before, *::after {margin:0; padding:0; box-sizing:border-box;}
+
+:root{
+    --background: #E4CDDD;
+    --caixinha: #CA99A8;
+    --titulo: #a55166;
+    --subitulo: #7B1D26;
+    --texto: #893A49;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url("lacinhos.png");
+    background-repeat: repeat;
+    background-size: 1000px;
+
+    color: var(--texto);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--titulo);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    color: var(--subitulo);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+input {
+    padding: 12px;
+    margin: 8px;
+    border: 2px solid var(--titulo);
+    border-radius: 5px;
+    background-color: var(--background);
+    color: var(--texto);
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--titulo);
+    color: #ffffff;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+button:hover {
+    background-color: var(--subitulo);
+}
+
+.resultado {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--subitulo);
+}
+
+
+.mapa {
+    margin-top: 25px;
+}
+
+.fileira {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.assento {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.assento.livre {
+    background-color: var(--background);
+    color: var(--texto);
+    border: 2px solid var(--background);
+}
+
+.assento.ocupado {
+    background-color: var(--subitulo);
+    color: var(--background);
+    border: 2px solid var(--subitulo);
+}
+
+a {
+    color: var(--titulo);
+}
+
+.container-cinema {
+  background-color: var(--caixinha); 
+  width: 90%;
+  max-width: 1100px;
+  height: 550px; 
+  margin: 60px auto; 
+  padding: 60px;
+  border-radius: 16px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
