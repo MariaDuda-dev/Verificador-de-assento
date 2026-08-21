@@ -115,9 +115,15 @@ button:hover {
 
 a {
     color: var(--titulo);
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.container-cinema {
+a:hover {
+    color: var(--subitulo);
+}
+
+.container-caixinha {
   background-color: var(--caixinha); 
   width: 90%;
   max-width: 1100px;
